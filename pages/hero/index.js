@@ -14,7 +14,7 @@ export default function Hero() {
         {/* Image */}
         <div className="md:hidden mx-auto mb-6 bg-gradient-to-b from-zinc-800 rounded-full h-64 w-64 md:w-80 md:h-80 relative overflow-hidden">
           <img
-            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/whatsapp-image-2023-07-26-at-1.02.21-pm-FbwNLPM03lssCLi.jpeg"
+            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/whatsapp-image-2023-07-26-at-1.10.28-pm-AudJGzUQcYe0v2r.jpeg"
             layout="fill"
             objectFit="cover"
           />
@@ -43,7 +43,7 @@ export default function Hero() {
             programming languages and a commitment to delivering exceptional
             user experiences through innovative solutions.
           </p>
-          <div className="mt-3 flex flex-row items-center gap-2">
+          <div className="mt-3 flex flex-row items-center md:justify-normal justify-center md:mx-0 mx-auto gap-2">
             <a
               href="https://www.facebook.com/profile.php?id=100070670619148"
               target="_blank"
@@ -88,7 +88,7 @@ export default function Hero() {
       <div className="flex-1 hidden md:block">
         <div className="mx-auto bg-gradient-to-b from-zinc-800 rounded-full w-80 h-80 relative mr-0 mt-0 overflow-hidden md:h-80 md:w-80">
           <img
-            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/whatsapp-image-2023-07-26-at-1.02.21-pm-FbwNLPM03lssCLi.jpeg"
+            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/whatsapp-image-2023-07-26-at-1.10.28-pm-AudJGzUQcYe0v2r.jpeg"
             layout="fill"
             objectFit="cover"
           />
