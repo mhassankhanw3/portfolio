@@ -23,9 +23,21 @@ export default function Portfolio() {
             and let's get cracking!
           </p>
           <div className="text-5xl flex flex-row items-center justify-center gap-10 md:gap-16 text-zinc-500 transition-all rounded-full cursor-pointer mt-8">
-            <BsFacebook className="hover:text-zinc-300 transition-all " />
-            <AiFillLinkedin className="hover:text-zinc-300 transition-all " />
-            <AiFillGithub className="hover:text-zinc-300 transition-all" />
+            <a
+              href="https://www.facebook.com/profile.php?id=100070670619148"
+              target="_blank"
+            >
+              <BsFacebook className="hover:text-zinc-300 transition-all " />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/hassan-khanmv-a8b382260/"
+              target="_blank"
+            >
+              <AiFillLinkedin className="hover:text-zinc-300 transition-all " />
+            </a>
+            <a href="https://github.com/mhassankhanw3" target="_blank">
+              <AiFillGithub className="hover:text-zinc-300 transition-all" />
+            </a>
           </div>
           <div className="mx-auto flex items-center justify-center bg-gradient-to-b from-zinc-700 to-gray-900 rounded-full w-64 h-64 relative overflow-hidden mt-20 md:h-80 md:w-80">
             <Image src={deved} layout="fill" objectFit="cover" />

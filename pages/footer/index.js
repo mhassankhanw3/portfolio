@@ -22,9 +22,9 @@ export default function Footer() {
         >
           <FaFacebookF className="text-gray-500 hover:text-gray-300 hover:text-[20px] transition-all text-[18px]" />
         </a>
-        <a href="https://www.instagram.com/hassankhanw3/" target="_blank">
+        {/* <a href="https://www.instagram.com/hassankhanw3/" target="_blank">
           <BsInstagram className="text-gray-500 hover:text-gray-300 hover:text-[20px] transition-all text-[18px]" />
-        </a>
+        </a> */}
         <a
           href="https://www.linkedin.com/in/hassan-khanmv-a8b382260/"
           target="_blank"

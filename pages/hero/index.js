@@ -12,7 +12,11 @@ export default function Hero() {
       <div className="flex-1 text-center md:text-left md:shadow-none p-10 rounded-xl my-10 dark:bg-white">
         {/* Image */}
         <div className="md:hidden mx-auto mb-6 bg-gradient-to-b from-zinc-800 rounded-full h-64 w-64 md:w-80 md:h-80 relative overflow-hidden">
-          <Image src={img} layout="fill" objectFit="cover" />
+          <img
+            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/add/whatsapp-image-2023-07-25-at-5.46.21-pm-L2CVaqfx3cmYkMh.jpeg"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
         {/* Content */}
         <div>
@@ -56,7 +60,11 @@ export default function Hero() {
       {/* Desktop View */}
       <div className="flex-1 hidden md:block">
         <div className="mx-auto bg-gradient-to-b from-zinc-800 rounded-full w-80 h-80 relative mr-0 mt-0 overflow-hidden md:h-80 md:w-80">
-          <Image src={img} layout="fill" objectFit="cover" />
+          <img
+            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/add/whatsapp-image-2023-07-25-at-5.46.21-pm-L2CVaqfx3cmYkMh.jpeg"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
       </div>
     </div>
