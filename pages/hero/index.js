@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { BsInstagram, BsGithub } from "react-icons/bs";
+import { SiReplit } from "react-icons/si";
 
 export default function Hero() {
   const img = require("../../assets/hero2.png");
@@ -13,7 +14,7 @@ export default function Hero() {
         {/* Image */}
         <div className="md:hidden mx-auto mb-6 bg-gradient-to-b from-zinc-800 rounded-full h-64 w-64 md:w-80 md:h-80 relative overflow-hidden">
           <img
-            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/add/whatsapp-image-2023-07-25-at-5.46.21-pm-L2CVaqfx3cmYkMh.jpeg"
+            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/whatsapp-image-2023-07-26-at-1.02.21-pm-FbwNLPM03lssCLi.jpeg"
             layout="fill"
             objectFit="cover"
           />
@@ -51,11 +52,11 @@ export default function Hero() {
               <FaFacebookF className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
             </a>
             <a
-              href="https://www.instagram.com/hassankhanw3/"
+              href="https://replit.com/@mhassankhanw3"
               target="_blank"
               className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] transition-all hover:shadow-gray-800 shadow-xl border-2 border-zinc-700 "
             >
-              <BsInstagram className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
+              <SiReplit className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
             </a>
             <a
               href="https://www.linkedin.com/in/hassan-khanmv-a8b382260/"
@@ -87,7 +88,7 @@ export default function Hero() {
       <div className="flex-1 hidden md:block">
         <div className="mx-auto bg-gradient-to-b from-zinc-800 rounded-full w-80 h-80 relative mr-0 mt-0 overflow-hidden md:h-80 md:w-80">
           <img
-            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/add/whatsapp-image-2023-07-25-at-5.46.21-pm-L2CVaqfx3cmYkMh.jpeg"
+            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/whatsapp-image-2023-07-26-at-1.02.21-pm-FbwNLPM03lssCLi.jpeg"
             layout="fill"
             objectFit="cover"
           />

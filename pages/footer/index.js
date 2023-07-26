@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { BsInstagram, BsGithub } from "react-icons/bs";
+import { SiReplit } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -22,9 +23,9 @@ export default function Footer() {
         >
           <FaFacebookF className="text-gray-500 hover:text-gray-300 hover:text-[20px] transition-all text-[18px]" />
         </a>
-        {/* <a href="https://www.instagram.com/hassankhanw3/" target="_blank">
-          <BsInstagram className="text-gray-500 hover:text-gray-300 hover:text-[20px] transition-all text-[18px]" />
-        </a> */}
+        <a href="https://replit.com/@mhassankhanw3" target="_blank">
+          <SiReplit className="text-gray-500 hover:text-gray-300 hover:text-[20px] transition-all text-[18px]" />
+        </a>
         <a
           href="https://www.linkedin.com/in/hassan-khanmv-a8b382260/"
           target="_blank"
