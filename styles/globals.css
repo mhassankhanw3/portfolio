@@ -1,26 +1,42 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 20px !important;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #121212;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #121212;
+  background-color: #121212;
 }
 
-* {
-  box-sizing: border-box;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(57, 57, 57);
+  border-radius: 10px;
+  height: 10px !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2f2f2f;
+}
+
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+
+.box {
+  box-shadow: -1px 3px 15px 1px rgba(36, 36, 36, 0.75);
+  -webkit-box-shadow: -1px 3px 15px 1px rgba(36, 36, 36, 0.75);
+  -moz-box-shadow: -1px 3px 15px 1px rgba(36, 36, 36, 0.75);
 }
