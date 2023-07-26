@@ -43,8 +43,34 @@ export default function Hero() {
             user experiences through innovative solutions.
           </p>
           <div className="mt-3 flex flex-row items-center gap-2">
-            {/* Social media links */}
-            {/* ... (same as before) ... */}
+            <a
+              href="https://www.facebook.com/profile.php?id=100070670619148"
+              target="_blank"
+              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] transition-all hover:shadow-gray-800 shadow-xl border-2 border-zinc-700 "
+            >
+              <FaFacebookF className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
+            </a>
+            <a
+              href="https://www.instagram.com/hassankhanw3/"
+              target="_blank"
+              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] transition-all hover:shadow-gray-800 shadow-xl border-2 border-zinc-700 "
+            >
+              <BsInstagram className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/hassan-khanmv-a8b382260/"
+              target="_blank"
+              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] transition-all hover:shadow-gray-800 shadow-xl border-2 border-zinc-700 "
+            >
+              <FaLinkedinIn className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
+            </a>
+            <a
+              href="https://github.com/mhassankhanw3"
+              target="_blank"
+              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] transition-all hover:shadow-gray-800 shadow-xl border-2 border-zinc-700 "
+            >
+              <BsGithub className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
+            </a>
           </div>
           <div className="mt-14">
             {/* Resume link */}
