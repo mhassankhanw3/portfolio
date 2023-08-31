@@ -44,8 +44,8 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="mt-20 max-w-[100%] md:w-[70%] mb-10 ">
-          <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
-          <p className="text-md py-2 leading-6 dark:text-gray-200">
+          <h3 className="text-3xl py-1  ">Services I offer</h3>
+          <p className="text-md py-2 leading-6 ">
             As a seasoned developer, my journey has been marked by diverse
             experiences and successful ventures. Through{" "}
             <span className="text-teal-500">internships</span>, and
@@ -53,7 +53,7 @@ export default function Portfolio() {
             exceptional digital products tailored for both business and consumer
             needs.
           </p>
-          <h3 className="text-2xl mt-10 mb-4 dark:text-white ">
+          <h3 className="text-2xl mt-10 mb-4 ">
             My comprehensive range of services includes:
           </h3>
           <p className="mt-1">
@@ -73,7 +73,7 @@ export default function Portfolio() {
           </p>
         </div>
         <div className="lg:flex flex-wrap md:gap-10 w-[100%]">
-          <div className="flex-1 text-center max-w-[100%] w-[100%] box p-10 rounded-xl my-10 dark:bg-white">
+          <div className="flex-1 text-center max-w-[100%] w-[100%] box p-10 rounded-xl my-10 ">
             <img
               className="w-[140px] max-w-[100%] mx-auto"
               src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/design-QXgcSyXZ3vPlscE.png"
@@ -88,7 +88,7 @@ export default function Portfolio() {
             <p className="text-gray-400 py-1">Figma</p>
             <p className="text-gray-400 py-1">Filmora</p>
           </div>
-          <div className="flex-1 text-center max-w-[100%] w-[100%] box p-10 rounded-xl my-10 dark:bg-white">
+          <div className="flex-1 text-center max-w-[100%] w-[100%] box p-10 rounded-xl my-10">
             <img
               className="w-[140px] max-w-[100%] mx-auto"
               src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/code-g8R6w9xBWrol4wc.png"
@@ -106,7 +106,7 @@ export default function Portfolio() {
             <p className="text-gray-400 py-1">React Native</p>
             <p className="text-gray-400 py-1">Version Control (Git)</p>
           </div>
-          <div className="flex-1 text-center max-w-[100%] w-[100%] box p-10 rounded-xl my-10 dark:bg-white">
+          <div className="flex-1 text-center max-w-[100%] w-[100%] box p-10 rounded-xl my-10 ">
             <img
               className="w-[140px] max-w-[100%] mx-auto"
               src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/consulting-VS2VF3S7ZXHzWoU.png"
@@ -124,7 +124,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className=" max-w-[100%] md:w-[800px] ">
-          <h3 className="text-3xl my-6 dark:text-white ">Portfolio</h3>
+          <h3 className="text-3xl my-6 ">Portfolio</h3>
           <p className="mt-4 text-gray-300 font-poppins font-thin ">
             As a web and app developer, I possess a diverse skill set in
             programming languages and a commitment to delivering exceptional

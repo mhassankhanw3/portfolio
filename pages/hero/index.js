@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <div className="lg:flex md:my-36 items-center gap-10">
       {/* Mobile View */}
-      <div className="flex-1 text-center md:text-left md:shadow-none p-10 rounded-xl my-10 dark:bg-white">
+      <div className="flex-1 text-center md:text-left md:shadow-none p-10 rounded-xl my-10 ">
         {/* Image */}
         <div className="md:hidden mx-auto mb-6 bg-gradient-to-b from-zinc-800 rounded-full h-64 w-64 md:w-80 md:h-80 relative overflow-hidden">
           <img
