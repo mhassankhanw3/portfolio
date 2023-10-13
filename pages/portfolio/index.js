@@ -4,16 +4,87 @@ import { AiFillFacebook, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import Image from "next/image";
 import Footer from "../footer";
+import Card from "../../components/Card";
 
 export default function Portfolio() {
   const deved = require("../../public/images/dev-ed-wave.png");
+  const cardsArray = {
+    designs: ["Canva", "Figma", "Filmora"],
+    codes: [
+      "HTML , CSS, JavaScript",
+      "ReactJS, Next.js",
+      "React Native",
+      "Version Control (Git)",
+    ],
+    develop: [
+      "Visual Studio Code",
+      "Command Line",
+      "Git & GitHub",
+      "VSCode Extensions",
+    ],
+    tools: [
+      "Nextjs, ",
+      "Database (MongoDB), ",
+      "NextAuth, ",
+      "Tailwindcss, ",
+      "AntDesign, ",
+    ],
+  };
+
+  const workExp = [
+    "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/ecommerrcefront-puCqTbgrwdFqSGb.png",
+    "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/screenshot-2023-07-25-191222-2t0tt3Daeta3SRo.png",
+    "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/screenshot-2023-07-25-191331-AKiMPYcsr2COICj.png",
+    "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/screenshot-2023-07-25-191403-04vY3JrwW5Qs2Dx.png",
+  ];
+  const Skills = {
+    skill: [
+      {
+        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/html-yimywKlnbsiQ8Vq.png",
+        text: "HTML",
+      },
+      {
+        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/javascript-1DTkosDcD1zeENF.png",
+        text: "JavaScript",
+      },
+      {
+        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/react-Og2uT3FJvm3Ekl7.png",
+        text: "React.js",
+      },
+      {
+        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/nextjs-Oji9AEGGLZPCe2D.png",
+        text: "Next.js",
+      },
+      {
+        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/download-(4)-PC4FVEjQdJiCSGD.png",
+        text: "React Native",
+      },
+      {
+        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/tailwindcss-1V8VuMNo1ob4Jyr.png",
+        text: "Tailwind Css",
+      },
+      {
+        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/download-(1)-HVHfU3za9T3d6uu.png",
+        text: "NextUI",
+      },
+      {
+        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/download-(2)-9zgOV8L2EZVJOoB.png",
+        text: "Shadcn",
+      },
+      {
+        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/download-(3)-pSwVuOjBc0FcMiL.png",
+        text: "Bootstrap",
+      },
+    ],
+  };
+
   return (
     <>
       <Navbar />
       <div className="max-w-[100%] md:w-[73.3%] px-[20px] text-gray-300 mx-auto h-full mt-[50px]">
         <div className="flex flex-col items-center justify-center text-center">
-          <div className="bg-gradient-to-r from-pink-600 to-purple-400 text-transparent bg-clip-text  ">
-            <h2 className="font-medium text-5xl">Hassan Khan</h2>
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text  ">
+            <h2 className="font-bold text-[60px]">Hassan Khan</h2>
           </div>
           <h3 className="mt-2 text-gray-300 text-[21px] font-semibold font-mulish ">
             Web & App Developer.
@@ -39,11 +110,11 @@ export default function Portfolio() {
               <AiFillGithub className="hover:text-zinc-300 transition-all" />
             </a>
           </div>
-          <div className="mx-auto flex items-center justify-center bg-gradient-to-b from-zinc-700 to-gray-900 rounded-full w-64 h-64 relative overflow-hidden mt-20 md:h-80 md:w-80">
+          <div className="mx-auto flex items-center justify-center bg-gradient-to-b from-gray-600 to-gray-900 rounded-full w-64 h-64 relative overflow-hidden mt-20 md:h-80 md:w-80">
             <Image src={deved} layout="fill" objectFit="cover" />
           </div>
         </div>
-        <div className="mt-20 max-w-[100%] md:w-[70%] mb-10 ">
+        <div className="mt-20 max-w-[100%] md:w-[70%] mb-10">
           <h3 className="text-3xl py-1  ">Services I offer</h3>
           <p className="text-md py-2 leading-6 ">
             As a seasoned developer, my journey has been marked by diverse
@@ -72,60 +143,57 @@ export default function Portfolio() {
             unique identity.
           </p>
         </div>
-        <div className="lg:flex flex-wrap md:gap-10 w-[100%]">
-          <div className="flex-1 text-center max-w-[100%] w-[100%] box p-10 rounded-xl my-10 ">
-            <img
-              className="w-[140px] max-w-[100%] mx-auto"
-              src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/design-QXgcSyXZ3vPlscE.png"
-            />
-            <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-            <p className="py-2">
-              Creating elegant designs and vedios suited for your needs
-              following core design theory.
-            </p>
-            <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-            <p className="text-gray-400 py-1">Canva</p>
-            <p className="text-gray-400 py-1">Figma</p>
-            <p className="text-gray-400 py-1">Filmora</p>
-          </div>
-          <div className="flex-1 text-center max-w-[100%] w-[100%] box p-10 rounded-xl my-10">
-            <img
-              className="w-[140px] max-w-[100%] mx-auto"
-              src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/code-g8R6w9xBWrol4wc.png"
-            />
-            <h3 className="text-lg font-medium pt-8 pb-2">
-              Code your dream project
-            </h3>
-            <p className="py-2">
-              Do you have an idea for your next great website? Let's make it a
-              reality.
-            </p>
-            <h4 className="py-4 text-teal-600">Development Tools I Use</h4>
-            <p className="text-gray-400 py-1">HTML, CSS, JavaScript</p>
-            <p className="text-gray-400 py-1">ReactJS, Next.js</p>
-            <p className="text-gray-400 py-1">React Native</p>
-            <p className="text-gray-400 py-1">Version Control (Git)</p>
-          </div>
-          <div className="flex-1 text-center max-w-[100%] w-[100%] box p-10 rounded-xl my-10 ">
-            <img
-              className="w-[140px] max-w-[100%] mx-auto"
-              src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/consulting-VS2VF3S7ZXHzWoU.png"
-            />
-            <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
-            <p className="py-2">
-              Are you interested in feedback for your current project? I can
-              give you tips and tricks to level it up.
-            </p>
-            <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-            <p className="text-gray-400 py-1">Visual Studio Code</p>
-            <p className="text-gray-400 py-1">Command Line</p>
-            <p className="text-gray-400 py-1">Git & GitHub</p>
-            <p className="text-gray-400 py-1">VSCode Extensions</p>
+        <div className="lg:flex flex-wrap md:gap-4 w-[100%]">
+          <Card
+            img={
+              "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/design-QXgcSyXZ3vPlscE.png"
+            }
+            title={"Beautiful Designs"}
+            desc={
+              "Creating elegant designs and vedios suited for your needs following core design theory."
+            }
+            title_sec="Design Tools I Use"
+            cardsArray={cardsArray.designs}
+          />
+          <Card
+            img={
+              "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/code-g8R6w9xBWrol4wc.png"
+            }
+            title={"Code your dream project"}
+            desc={
+              "Do you have an idea for your next great website? Let's make it a reality."
+            }
+            title_sec="Development Tools I Use"
+            cardsArray={cardsArray.codes}
+          />
+          <Card
+            img={
+              "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/consulting-VS2VF3S7ZXHzWoU.png"
+            }
+            title={"Consulting"}
+            desc={
+              "Are you interested in feedback for your current project? I can give you tips and tricks to level it up."
+            }
+            title_sec="Programming Tools I Use"
+            cardsArray={cardsArray.develop}
+          />
+        </div>
+        <div className="mb-10">
+          <h2 className="font-medium text-3xl">My Skills:</h2>
+          <div className="flex flex-wrap items-center sm:justify-normal max-w-full w-[90%] justify-center mt-4 gap-4">
+            {Skills?.skill?.map((i) => (
+              <div className="bg-[#1E293B] p-2 max-w-full w-44 flex-col items-center justify-center rounded-md border border-[#334155]">
+                <div className="flex items-center">
+                  <img src={i.img} alt="" />
+                  <h4 className="ml-2">{i.text}</h4>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         <div className=" max-w-[100%] md:w-[800px] ">
-          <h3 className="text-3xl my-6 ">Portfolio</h3>
-          <p className="mt-4 text-gray-300 font-poppins font-thin ">
+          <h3 className="text-3xl mt-6 mb-1 ">Portfolio</h3>
+          <p className="text-gray-300 font-poppins font-normal ">
             As a web and app developer, I possess a diverse skill set in
             programming languages and a commitment to delivering exceptional
             user experiences through innovative solutions.
@@ -134,63 +202,28 @@ export default function Portfolio() {
         <div className="mt-10">
           <h2 className="font-semibold text-[32px]">My Latest Work</h2>
           <p className="font-poppins font-thin">
-            Recently I was working on Ecommerce project for my practicing.
+            I Created an Ecommerce project for my practicing.
           </p>
           <h4 className="mt-4 text-[18px]">Tools I used in this project:</h4>
           <span className="font-poppins font-thin">
-            <span className="text-teal-400">Nextjs</span>,{" "}
-            <span className="text-teal-400"> Database (MongoDB)</span>,
-            <span className="text-teal-400"> NextAuth</span>,
-            <span className="text-teal-400"> Tailwindcss</span>,
-            <span className="text-teal-400"> AntDesign</span>
+            {cardsArray.tools.map((i) => (
+              <span className="text-teal-400">{i}</span>
+            ))}
           </span>
           <span className="block">
-            Proper Admin and front End setup in this project .
+            Admin and frontend setup in this project.
           </span>
         </div>
-        <div className="flex flex-col gap-10 py-10 mt-4 lg:flex-row lg:flex-wrap">
-          <div className="basis-1/3 flex-1 ">
-            <img
-              className="rounded-xl object-cover"
-              src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/ecommerrcefront-puCqTbgrwdFqSGb.png"
-              layout="responsive"
-            />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <img
-              className="rounded-lg object-cover"
-              src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/screenshot-2023-07-25-191222-2t0tt3Daeta3SRo.png"
-              layout="responsive"
-            />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <img
-              className="rounded-lg object-cover"
-              src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/screenshot-2023-07-25-191331-AKiMPYcsr2COICj.png"
-              layout="responsive"
-            />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <img
-              className="rounded-lg object-cover"
-              src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/screenshot-2023-07-25-191403-04vY3JrwW5Qs2Dx.png"
-              layout="responsive"
-            />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <img
-              className="rounded-lg object-cover"
-              src=""
-              layout="responsive"
-            />
-          </div>
-          <div className="basis-1/3 flex-1">
-            <img
-              className="rounded-lg object-cover"
-              src=""
-              layout="responsive"
-            />
-          </div>
+        <div className="flex flex-col gap-4 py-10 mt-4 mb-10 lg:flex-row lg:flex-wrap">
+          {workExp.map((i) => (
+            <div className="basis-1/3 flex-1 transition-all p-2 hover:p-0 shadow-2xl ">
+              <img
+                className="rounded-xl object-cover"
+                src={i}
+                layout="responsive"
+              />
+            </div>
+          ))}
         </div>
       </div>
       <div className="md:w-[73.3%] w-[100%] mx-auto">
