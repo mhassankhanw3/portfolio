@@ -32,52 +32,53 @@ export default function Portfolio() {
   };
 
   const workExp = [
-    "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/ecommerrcefront-puCqTbgrwdFqSGb.png",
-    "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/screenshot-2023-07-25-191222-2t0tt3Daeta3SRo.png",
-    "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/screenshot-2023-07-25-191331-AKiMPYcsr2COICj.png",
-    "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/screenshot-2023-07-25-191403-04vY3JrwW5Qs2Dx.png",
+    require("../../assets/images/adminOne.png"),
+    require("../../assets/images/adminFour.png"),
+    require("../../assets/images/adminThree.png"),
+    require("../../assets/images/adminTwo.png"),
   ];
   const Skills = {
     skill: [
       {
-        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/html-yimywKlnbsiQ8Vq.png",
+        img: require("../../assets/images/html.png"),
         text: "HTML",
       },
       {
-        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/javascript-1DTkosDcD1zeENF.png",
+        img: require("../../assets/images/javascript.png"),
         text: "JavaScript",
       },
       {
-        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/react-Og2uT3FJvm3Ekl7.png",
+        img: require("../../assets/images/react.png"),
         text: "React.js",
       },
       {
-        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/nextjs-Oji9AEGGLZPCe2D.png",
+        img: require("../../assets/images/nextjs.png"),
         text: "Next.js",
       },
       {
-        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/download-(4)-PC4FVEjQdJiCSGD.png",
+        img: require("../../assets/images/native.png"),
         text: "React Native",
       },
       {
-        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/tailwindcss-1V8VuMNo1ob4Jyr.png",
+        img: require("../../assets/images/TailwindCss.png"),
         text: "Tailwind Css",
       },
       {
-        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/download-(1)-HVHfU3za9T3d6uu.png",
+        img: require("../../assets/images/nextui.png"),
         text: "NextUI",
       },
       {
-        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/download-(2)-9zgOV8L2EZVJOoB.png",
+        img: require("../../assets/images/shadcn.png"),
         text: "Shadcn",
       },
       {
-        img: "https://d5hdtqvs98ocz.cloudfront.net/cdn/add/download-(3)-pSwVuOjBc0FcMiL.png",
+        img: require("../../assets/images/bootTwo.png"),
         text: "Bootstrap",
       },
     ],
   };
 
+  const imgOne = require("../../assets/images/design.png");
   return (
     <>
       <Navbar />
@@ -101,7 +102,7 @@ export default function Portfolio() {
               <BsFacebook className="hover:text-zinc-300 transition-all " />
             </a>
             <a
-              href="https://www.linkedin.com/in/hassan-khanmv-a8b382260/"
+              href="https://www.linkedin.com/in/hassan-khan-0b0508233/"
               target="_blank"
             >
               <AiFillLinkedin className="hover:text-zinc-300 transition-all " />
@@ -110,7 +111,7 @@ export default function Portfolio() {
               <AiFillGithub className="hover:text-zinc-300 transition-all" />
             </a>
           </div>
-          <div className="mx-auto flex items-center justify-center bg-gradient-to-b from-gray-600 to-gray-900 rounded-full w-64 h-64 relative overflow-hidden mt-20 md:h-80 md:w-80">
+          <div className="mx-auto flex items-center justify-center bg-gradient-to-b from-gray-950 to-gray-800 rounded-full w-64 h-64 relative overflow-hidden mt-20 md:h-80 md:w-80">
             <Image src={deved} layout="fill" objectFit="cover" />
           </div>
         </div>
@@ -145,9 +146,7 @@ export default function Portfolio() {
         </div>
         <div className="lg:flex flex-wrap md:gap-4 w-[100%]">
           <Card
-            img={
-              "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/design-QXgcSyXZ3vPlscE.png"
-            }
+            img={require("../../assets/images/design.png")}
             title={"Beautiful Designs"}
             desc={
               "Creating elegant designs and vedios suited for your needs following core design theory."
@@ -156,9 +155,7 @@ export default function Portfolio() {
             cardsArray={cardsArray.designs}
           />
           <Card
-            img={
-              "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/code-g8R6w9xBWrol4wc.png"
-            }
+            img={require("../../assets/images/code.png")}
             title={"Code your dream project"}
             desc={
               "Do you have an idea for your next great website? Let's make it a reality."
@@ -167,9 +164,7 @@ export default function Portfolio() {
             cardsArray={cardsArray.codes}
           />
           <Card
-            img={
-              "https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/consulting-VS2VF3S7ZXHzWoU.png"
-            }
+            img={require("../../assets/images/consulting.png")}
             title={"Consulting"}
             desc={
               "Are you interested in feedback for your current project? I can give you tips and tricks to level it up."
@@ -184,7 +179,7 @@ export default function Portfolio() {
             {Skills?.skill?.map((i) => (
               <div className="bg-[#1E293B] p-2 max-w-full w-44 flex-col items-center justify-center rounded-md border border-[#334155]">
                 <div className="flex items-center">
-                  <img src={i.img} alt="" />
+                  <Image src={i.img} alt="" />
                   <h4 className="ml-2">{i.text}</h4>
                 </div>
               </div>
@@ -217,7 +212,7 @@ export default function Portfolio() {
         <div className="flex flex-col gap-4 py-10 mt-4 mb-10 lg:flex-row lg:flex-wrap">
           {workExp.map((i) => (
             <div className="basis-1/3 flex-1 transition-all p-2 hover:p-0 shadow-2xl ">
-              <img
+              <Image
                 className="rounded-xl object-cover"
                 src={i}
                 layout="responsive"

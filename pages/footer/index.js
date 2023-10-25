@@ -27,7 +27,7 @@ export default function Footer() {
           <SiReplit className="text-gray-500 hover:text-gray-300 hover:text-[20px] transition-all text-[18px]" />
         </a>
         <a
-          href="https://www.linkedin.com/in/hassan-khanmv-a8b382260/"
+          href="https://www.linkedin.com/in/hassan-khan-0b0508233/"
           target="_blank"
         >
           <FaLinkedinIn className="text-gray-500 hover:text-gray-300  hover:text-[20px] transition-all text-[18px]" />

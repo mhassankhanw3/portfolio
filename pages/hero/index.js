@@ -4,17 +4,18 @@ import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { BsInstagram, BsGithub } from "react-icons/bs";
 import { SiReplit } from "react-icons/si";
+import { profile } from "../../assets/images/portfolioProfile.jpeg";
 
 export default function Hero() {
-  const img = require("../../assets/hero2.png");
+  const img = require("../../assets/images/profilepic.jpeg");
   return (
-    <div className="lg:flex md:my-36 items-center gap-10">
+    <div className="lg:flex h-screen items-center gap-10">
       {/* Mobile View */}
       <div className="flex-1 text-center md:text-left md:shadow-none p-10 rounded-xl my-10 ">
         {/* Image */}
         <div className="md:hidden mx-auto mb-6 bg-gradient-to-b from-zinc-800 rounded-full h-64 w-64 md:w-80 md:h-80 relative overflow-hidden">
           <img
-            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/whatsapp-image-2023-07-26-at-1.10.28-pm-AudJGzUQcYe0v2r.jpeg"
+            src={"../assets/portfolioProfile.jpeg"}
             layout="fill"
             objectFit="cover"
           />
@@ -39,7 +40,7 @@ export default function Hero() {
             </h2>
           </div>
           <p className="mt-4 text-gray-300 font-poppins font-thin max-w-[100%] md:w-[460px]">
-            As a web and app developer, I possess a diverse skill set in
+            As a Web and App developer, I possess a diverse skill set in
             programming languages and a commitment to delivering exceptional
             user experiences through innovative solutions.
           </p>
@@ -47,28 +48,28 @@ export default function Hero() {
             <a
               href="https://www.facebook.com/profile.php?id=100070670619148"
               target="_blank"
-              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] transition-all hover:shadow-gray-800 shadow-xl border-2 border-zinc-700 "
+              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] transition-all hover:shadow-gray-950 shadow-xl border border-[#334155] "
             >
               <FaFacebookF className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
             </a>
             <a
               href="https://replit.com/@mhassankhanw3"
               target="_blank"
-              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] transition-all hover:shadow-gray-800 shadow-xl border-2 border-zinc-700 "
+              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] p-1 transition-all hover:shadow-gray-950 shadow-xl border border-[#334155] "
             >
               <SiReplit className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
             </a>
             <a
-              href="https://www.linkedin.com/in/hassan-khanmv-a8b382260/"
+              href="https://www.linkedin.com/in/hassan-khan-0b0508233/"
               target="_blank"
-              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] transition-all hover:shadow-gray-800 shadow-xl border-2 border-zinc-700 "
+              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] p-1 transition-all hover:shadow-gray-950 shadow-xl border border-[#334155] "
             >
               <FaLinkedinIn className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
             </a>
             <a
               href="https://github.com/mhassankhanw3"
               target="_blank"
-              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] transition-all hover:shadow-gray-800 shadow-xl border-2 border-zinc-700 "
+              className="rounded-[50px] flex flex-row items-center justify-center w-[40px] h-[40px] p-1 transition-all hover:shadow-gray-950 shadow-xl border border-[#334155] "
             >
               <BsGithub className="text-zinc-400 shadow-zinc-700 shadow-2xl text-[16px]" />
             </a>
@@ -76,8 +77,8 @@ export default function Hero() {
           <div className="mt-14">
             {/* Resume link */}
             <Link href="/portfolio" legacyBehavior>
-              <a className="bg-gradient-to-l from-[#282828] to-zinc-600 shadow-zinc-700 shadow-2xl hover:shadow-xl transition-all rounded-[50px] py-3 px-6 text-gray-300 font-poppins">
-                Resume
+              <a className="bg-[#1E293B] hover:bg-gray-700 border border-[#334155] transition-all rounded-lg py-3 px-6 text-gray-300 font-poppins">
+                Portfolio
               </a>
             </Link>
           </div>
@@ -86,12 +87,8 @@ export default function Hero() {
 
       {/* Desktop View */}
       <div className="flex-1 hidden md:block">
-        <div className="mx-auto bg-gradient-to-b from-zinc-800 rounded-full w-80 h-80 relative mr-0 mt-0 overflow-hidden md:h-80 md:w-80">
-          <img
-            src="https://d5hdtqvs98ocz.cloudfront.net/cdn/asdd/whatsapp-image-2023-07-26-at-1.10.28-pm-AudJGzUQcYe0v2r.jpeg"
-            layout="fill"
-            objectFit="cover"
-          />
+        <div className="mx-auto bg-gradient-to-b from-gray-950 rounded-full  relative mr-0 mt-0 overflow-hidden md:h-80 md:w-80">
+          <Image src={img} layout="fill" objectFit="cover" />
         </div>
       </div>
     </div>

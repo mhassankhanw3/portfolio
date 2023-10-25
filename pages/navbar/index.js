@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 // import portfolio from "../../components/portfolio/index";
 import { AiFillLinkedin } from "react-icons/ai";
+
 export default function Navbar() {
   return (
     <nav className="flex flex-row flex-wrap items-center justify-between bg-[#1E293B] shadow-xl border border-[#334155] rounded-2xl py-[10px] max-w-[100%] md:px-10 px-10 md:w-[70%] mx-auto ">
@@ -62,15 +63,10 @@ export default function Navbar() {
         </ul>
       </div> */}
       <a
-        href="https://www.linkedin.com/in/hassan-khanmv-a8b382260/"
+        href="https://www.linkedin.com/in/hassan-khan-0b0508233/"
         target="_blank"
         className="bg-[#475569] hover:bg-[#334155] py-2 px-4 flex items-center justify-center gap-1 rounded-[6px] text-gray-200 transition-all duration-400   "
       >
-        <img
-          src="https://d5hdtqvs98ocz.cloudfront.net/cdn/add/download-xIJ1dSV3d5nYJKs.png"
-          alt=""
-          className="w-5 h-5 rounded"
-        />
         let's Connect{" "}
       </a>
     </nav>
